@@ -24,7 +24,7 @@ TARGET_DIR=$HOME/.local/xonsh-env PYTHON_VER=3.12 /bin/bash \
 # Restart session
 ```
 Now you have:
-```
+```xsh
 which xonsh
 # /home/user/.local/xonsh-env/xbin/xonsh  # You can run this directly from any place.
 xonsh
