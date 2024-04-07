@@ -21,9 +21,10 @@ Choose the `TARGET_DIR` and run installation:
 ```xsh
 TARGET_DIR=$HOME/.local/xonsh-env PYTHON_VER=3.12 /bin/bash \
   -c "$(curl -fsSL https://raw.githubusercontent.com/anki-code/xonsh-install/main/mamba-install-xonsh.sh)"
-
 # Restart session
-
+```
+Now you have:
+```
 which xonsh
 # /home/user/.local/xonsh-env/xbin/xonsh  # You can run this directly from any place.
 xonsh
