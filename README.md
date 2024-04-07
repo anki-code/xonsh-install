@@ -23,15 +23,20 @@ TARGET_DIR=$HOME/.local/xonsh-env PYTHON_VER=3.12 /bin/bash \
   -c "$(curl -fsSL https://raw.githubusercontent.com/anki-code/xonsh-install/main/mamba-install-xonsh.sh)"
 # Restart session
 ```
+
 Now you have:
 ```xsh
 which xonsh
-# /home/user/.local/xonsh-env/xbin/xonsh  # You can run this directly from any place.
+# /Users/user/.local/xonsh-env/xbin/xonsh  # You can run this directly from any place.
 xonsh
 
 which xpip
-# /home/user/.local/xonsh-env/bin/python -m pip
+# /Users/user/.local/xonsh-env/bin/python -m pip
 which xmamba
-# /home/user/.local/xonsh-env/xbin/xmamba
+# /Users/user/.local/xonsh-env/xbin/xmamba
 ```
-Now you can forget about the cases where manipulations around python and packages break the shell unintended.
+
+Now forget about the cases where manipulations around python and packages break the shell unintended.
+
+## See also
+* [xonsh-cheatsheet](https://github.com/anki-code/xonsh-cheatsheet/tree/main)
