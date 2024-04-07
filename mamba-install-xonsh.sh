@@ -119,7 +119,14 @@ echo TARGET_DIR=$TARGET_DIR
 echo PYTHON_VER=$PYTHON_VER
 echo MAMBA_USE_CONDA_FORGE=$MAMBA_USE_CONDA_FORGE
 echo
-echo Run manually:
+echo Now you can:
 echo
-echo "echo 'export PATH=${TARGET_DIR}/xbin:\$PATH' >> ~/.bashrc"
+echo '  1. Add `xbin` dir to the top of your system shell path:'
 echo
+echo "      echo 'export PATH=${TARGET_DIR}/xbin:\$PATH' >> ~/.bashrc"
+echo '      # Restart session and run xonsh.'
+echo
+echo "  2. Or run xonsh manually by path from any place:"
+echo
+echo "      ${TARGET_DIR}/xbin/xonsh"
+echo 
