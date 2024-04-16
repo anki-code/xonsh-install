@@ -12,7 +12,7 @@ Xonsh is a Python-based shell, and to run xonsh you must have Python installed. 
 
 When xonsh becomes a core shell it's needed to keep python environment with xonsh stable, predictable and independent of any changes in the system.
 
-The `mamba-install-xonsh.sh` script implements this by creating python environment for xonsh using mamba. It's isolated xonsh-specific environment that can't be affected by upgrading the system packages, python version and other experiments around environments. The xonsh shell will work as well as installing and updating the packages using `xpip` and `xmamba`.
+The `mamba-install-xonsh.sh` script implements this by creating python environment for xonsh using [mamba](https://mamba.readthedocs.io/). It's isolated xonsh-specific environment that can't be affected by upgrading the system packages, python version and other experiments around environments. The xonsh shell will work as well as installing and updating the packages using `xpip` and `xmamba`.
 
 ## Install xonsh
 
@@ -42,6 +42,10 @@ If you have no plans to use `xmamba` [clean](https://fig.io/manual/mamba/clean) 
 ```xsh
 xmamba clean -a
 ```
+
+## Another way to install xonsh
+
+If you know how to install xonsh using another package manager PR is welcome!
 
 ## See also
 * [xonsh-cheatsheet](https://github.com/anki-code/xonsh-cheatsheet/tree/main)
