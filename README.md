@@ -45,4 +45,4 @@ xmamba clean -a
 
 ## See also
 * [xonsh-cheatsheet](https://github.com/anki-code/xonsh-cheatsheet/tree/main)
-* [xonsh.AppImage] - one executable file which contains both xonsh and Python. AppImage allows xonsh to be run on any AppImage supported Linux distribution without installation or root access.
+* [xonsh.AppImage](https://xon.sh/appimage.html) - one executable file which contains both xonsh and Python. AppImage allows xonsh to be run on any AppImage supported Linux distribution without installation or root access.
