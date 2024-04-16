@@ -130,3 +130,5 @@ echo "  2. Or run xonsh manually by path from any place:"
 echo
 echo "      ${TARGET_DIR}/xbin/xonsh"
 echo 
+echo '  Note! You can clean the space by running `xmamba clean -a`.'
+echo 
