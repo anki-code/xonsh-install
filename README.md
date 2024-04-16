@@ -48,5 +48,5 @@ xmamba clean -a
 If you know how to install xonsh using another package manager PR is welcome!
 
 ## See also
-* [xonsh-cheatsheet](https://github.com/anki-code/xonsh-cheatsheet/tree/main)
+* [xonsh-cheatsheet](https://github.com/anki-code/xonsh-cheatsheet/tree/main) - Cheat sheet for xonsh shell with copy-pastable examples. The best doc for the new users. 
 * [xonsh.AppImage](https://xon.sh/appimage.html) - one executable file which contains both xonsh and Python. AppImage allows xonsh to be run on any AppImage supported Linux distribution without installation or root access.
