@@ -38,5 +38,10 @@ which xmamba
 
 Now forget about the cases where manipulations around python and packages break the shell unintended.
 
+If you have no plans to use `xmamba` [clean](https://fig.io/manual/mamba/clean) the disk space:
+```xsh
+xmamba clean -a
+```
+
 ## See also
 * [xonsh-cheatsheet](https://github.com/anki-code/xonsh-cheatsheet/tree/main)
