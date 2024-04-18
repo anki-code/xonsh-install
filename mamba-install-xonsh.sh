@@ -31,7 +31,8 @@ echo
 echo Install micromamba
 echo 
 
-# Original source: https://github.com/mamba-org/micromamba-releases/blob/main/install.sh
+# START INSTALLING MAMBA -- Code from https://github.com/mamba-org/micromamba-releases/blob/main/install.sh
+
 # Computing artifact location
 case "$(uname)" in
   Linux)
@@ -88,6 +89,7 @@ case "$MAMBA_USE_CONDA_FORGE" in
     ;;
 esac
 
+# STOP INSTALLING MAMBA
 
 echo 
 echo Install xonsh
@@ -121,12 +123,12 @@ echo MAMBA_USE_CONDA_FORGE=$MAMBA_USE_CONDA_FORGE
 echo
 echo Now you can:
 echo
-echo '  1. Add `xbin` dir to the top of your system shell path:'
+echo '  * Add `xbin` dir to the top of your system shell path:'
 echo
 echo "      echo 'export PATH=${TARGET_DIR}/xbin:\$PATH' >> ~/.bashrc"
 echo '      # Restart session and run xonsh.'
 echo
-echo "  2. Or run xonsh manually by path from any place:"
+echo "  * Or run xonsh manually by path from any place:"
 echo
 echo "      ${TARGET_DIR}/xbin/xonsh"
 echo 
