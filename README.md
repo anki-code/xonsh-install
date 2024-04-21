@@ -37,7 +37,7 @@ which xmamba
 # /Users/user/.local/xonsh-env/xbin/xmamba
 
 ls -la @$(which xbin-xonsh)  # To run xonsh from xbin if xonsh overwritten by $PATH
-# /Users/pc/.local/xonsh-env/xbin/xbin-xonsh -> xonsh
+# /Users/pc/.local/xonsh-env/xbin/xbin-xonsh -> xbin/xonsh
 ```
 
 Now forget about the cases where manipulations around python and packages break the shell unintended.
