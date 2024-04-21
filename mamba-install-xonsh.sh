@@ -113,6 +113,7 @@ export PATH=$TARGET_DIR/xbin:\$PATH
 "$TARGET_DIR/bin/xonsh" "\$@"
 EOF
 chmod +x ./xbin/xonsh
+ln -s xonsh ./xbin/xbin-xonsh  # to run xonsh from xonsh env if xonsh overwritten by $PATH
 
 echo 
 echo Result
