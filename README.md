@@ -29,13 +29,12 @@ Now you have:
 ```xsh
 which xonsh
 # /Users/user/.local/xonsh-env/xbin/xonsh  # You can run this directly from any place.
-xonsh
 
+xonsh
 which xpip
 # /Users/user/.local/xonsh-env/bin/python -m pip
 which xmamba
 # /Users/user/.local/xonsh-env/xbin/xmamba
-
 ls -la @$(which xbin-xonsh)  # To run xonsh from xbin if xonsh overwritten by $PATH
 # /Users/pc/.local/xonsh-env/xbin/xbin-xonsh -> xbin/xonsh
 ```
