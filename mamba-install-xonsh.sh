@@ -107,6 +107,7 @@ chmod +x ./xbin/xmamba
 cat > ./xbin/xbin-add <<EOF
 #!/bin/bash
 ln -s $MAMBA_BIN_DIR/"\$@" $MAMBA_BIN_DIR/../xbin/"\$@"
+ls $MAMBA_BIN_DIR/../xbin/"\$@"
 EOF
 chmod +x ./xbin/xbin-add
 
@@ -121,6 +122,12 @@ cat > ./xbin/xbin-list <<EOF
 ls -1 $MAMBA_BIN_DIR/../xbin/
 EOF
 chmod +x ./xbin/xbin-list
+
+cat > ./xbin/xbin-list-bin <<EOF
+#!/bin/bash
+ls -1 $MAMBA_BIN_DIR/
+EOF
+chmod +x ./xbin/xbin-list-bin
 
 ./xbin/xmamba install -y python=$PYTHON_VER
 "$TARGET_DIR/bin/python" -m pip install 'xonsh[full]'
