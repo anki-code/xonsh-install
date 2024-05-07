@@ -96,13 +96,31 @@ echo Install xonsh
 echo 
 
 cat > ./xbin/xmamba <<EOF
-#!/usr/bin/env bash
+#!/bin/bash
 export MAMBA_ROOT_PREFIX="$TARGET_DIR"
 eval "\$($MAMBA_BIN_DIR/micromamba shell hook --shell bash)"
 micromamba activate base
 micromamba "\$@"
 EOF
 chmod +x ./xbin/xmamba
+
+cat > ./xbin/xbin-add <<EOF
+#!/bin/bash
+ln -s $MAMBA_BIN_DIR/"\$@" $MAMBA_BIN_DIR/../xbin/"\$@"
+EOF
+chmod +x ./xbin/xbin-add
+
+cat > ./xbin/xbin-del <<EOF
+#!/bin/bash
+rm -i $MAMBA_BIN_DIR/../xbin/"\$@"
+EOF
+chmod +x ./xbin/xbin-del
+
+cat > ./xbin/xbin-list <<EOF
+#!/bin/bash
+ls -1 $MAMBA_BIN_DIR/../xbin/
+EOF
+chmod +x ./xbin/xbin-list
 
 ./xbin/xmamba install -y python=$PYTHON_VER
 "$TARGET_DIR/bin/python" -m pip install 'xonsh[full]'
