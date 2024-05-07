@@ -108,7 +108,7 @@ chmod +x ./xbin/xmamba
 "$TARGET_DIR/bin/python" -m pip install 'xonsh[full]'
 
 cat > ./xbin/xonsh <<EOF
-#!/usr/bin/env bash -i
+#!/bin/bash -i
 export PATH=$TARGET_DIR/xbin:\$PATH
 "$TARGET_DIR/bin/xonsh" "\$@"
 EOF
