@@ -36,10 +36,11 @@ Now forget about the cases where manipulations around python and packages break 
 ## Additions
 
 * `xbin-xonsh` is to run xonsh from `xbin` if xonsh overwritten by `$PATH`.
-* `xbin-list-bin` is to list internal `bin` directory in xonsh-env. E.g. you `xpip install lolcat`.
-* `xbin-add` is to add executer from `bin` to `xbin`. E.g. `xbin-add lolcat`.
-* `xbin-list` is to list `xbin` directory. E.g. you check that `lolcat` is there.
-* `xbin-del` is to delete executer from `xbin`. E.g. remove `lolcat` from `xbin`.
+* Use executable script from xonsh-env:
+  * `xbin-list-bin` is to list internal `bin` directory in xonsh-env. E.g. you `xpip install lolcat`.
+  * `xbin-add` is to add executer from `bin` to `xbin`. E.g. `xbin-add lolcat`.
+  * `xbin-list` is to list `xbin` directory. E.g. you check that `lolcat` is there.
+  * `xbin-del` is to delete executer from `xbin`. E.g. remove `lolcat` from `xbin`.
 
 ## Tips and tricks
 
