@@ -31,7 +31,7 @@ After installation and running xonsh from xonsh-env:
 * `xmamba` refers to `~/.local/xonsh-env/xbin/xmamba`.
 * `xpip` refers to `~/.local/xonsh-env/bin/python -m pip`.
 
-Now forget about the cases where manipulations around python and packages break the shell unintended. Use `pip`, `brew` and other package managers.
+Now forget about the cases where manipulations around python and packages break the shell unintended. Use `pip`, `brew` and other package managers without corrupting xonsh-env.
 
 ## Additions
 
