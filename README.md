@@ -35,7 +35,8 @@ Now forget about the cases where manipulations around python and packages break 
 
 ## Additions
 
-* `xbin-xonsh` is to run xonsh from `xbin` if xonsh overwritten by `$PATH`.
+* `xbin-xonsh` is to run xonsh from xonsh-env if xonsh overwritten by `$PATH`.
+* `xbin-python` is to run python from xonsh-env.
 * Use executable script from xonsh-env:
   * `xbin-list-bin` is to list internal `bin` directory in xonsh-env. E.g. you `xpip install lolcat`.
   * `xbin-add` is to add executer from `bin` to `xbin`. E.g. `xbin-add lolcat`.
