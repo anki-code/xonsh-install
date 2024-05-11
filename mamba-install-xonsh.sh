@@ -7,7 +7,7 @@ echo Start
 echo 
 
 TARGET_DIR="${TARGET_DIR:-${HOME}/.local/xonsh-env}"
-PYTHON_VER="3.12"
+PYTHON_VER="${PYTHON_VER:-3.12}"
 XONSH_VER="xonsh[full]"  # Use `git+https://github.com/xonsh/xonsh` to install from master branch.
 
 MAMBA_BIN_DIR="${TARGET_DIR}/bin"
