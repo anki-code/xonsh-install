@@ -22,7 +22,7 @@ Choose the `TARGET_DIR` and run installation xonsh from the main branch:
 TARGET_DIR=$HOME/.local/xonsh-env PYTHON_VER=3.11 XONSH_VER='git+https://github.com/xonsh/xonsh' /bin/bash \
   -c "$(curl -fsSL https://raw.githubusercontent.com/anki-code/xonsh-install/main/mamba-install-xonsh.sh)"
 ```
-You can also set `XONSH_VER='xonsh[full]'` to install latest release.
+You can reset `XONSH_VER='xonsh[full]'` to install latest release.
 
 ## Usage
 
