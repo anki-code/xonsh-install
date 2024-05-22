@@ -19,7 +19,7 @@ The `mamba-install-xonsh.sh` script creates independent python environment for x
 Choose the `TARGET_DIR` and run installation xonsh from the main branch:
 
 ```xsh
-TARGET_DIR=$HOME/.local/xonsh-env PYTHON_VER=3.11 XONSH_VER='git+https://github.com/xonsh/xonsh' /bin/bash \
+TARGET_DIR=$HOME/.local/xonsh-env PYTHON_VER=3.11 XONSH_VER='git+https://github.com/xonsh/xonsh#egg=xonsh[full]' /bin/bash \
   -c "$(curl -fsSL https://raw.githubusercontent.com/anki-code/xonsh-install/main/mamba-install-xonsh.sh)"
 ```
 You can reset `XONSH_VER='xonsh[full]'` to install latest release.
