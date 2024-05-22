@@ -36,7 +36,7 @@ TARGET_DIR=$HOME/.local/xonsh-env PYTHON_VER=3.12 XONSH_VER='git+https://github.
 Now forget about the cases where manipulations around python and packages break the shell unintended. Use `pip`, `brew` and other package managers without corrupting xonsh-env.
 
 After installation:
-* `xonsh` referf to `~/.local/xonsh-env/xbin/xonsh`.
+* `xonsh` refers to `~/.local/xonsh-env/xbin/xonsh`.
 * `xmamba` refers to `~/.local/xonsh-env/xbin/xmamba`.
 * `xpip` refers to `~/.local/xonsh-env/bin/python -m pip`.
 
