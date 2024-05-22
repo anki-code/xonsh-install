@@ -16,14 +16,14 @@ When xonsh becomes a core shell it's needed to keep python environment with xons
 
 The `mamba-install-xonsh.sh` script creates independent python environment for xonsh using [mamba](https://mamba.readthedocs.io/). It's isolated xonsh-specific environment that can't be affected by upgrading the system packages, python version and other experiments around environments. You can use `xpip` and `xmamba` to install packages into this environment intentionally.
 
-Install the latest xonsh release with mostly tested python version:
+**Install stable**: the latest xonsh release with mostly tested python version:
 
 ```xsh
 TARGET_DIR=$HOME/.local/xonsh-env PYTHON_VER=3.11 XONSH_VER='xonsh[full]' \
  /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/anki-code/xonsh-install/main/mamba-install-xonsh.sh)"
 ```
 
-Install xonsh from main git branch with latest python version:
+**Install the front line**: xonsh from main git branch with latest python version:
 
 ```xsh
 TARGET_DIR=$HOME/.local/xonsh-env PYTHON_VER=3.12 XONSH_VER='git+https://github.com/xonsh/xonsh#egg=xonsh[full]' \
