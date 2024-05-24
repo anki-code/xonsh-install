@@ -29,7 +29,7 @@ TARGET_DIR=$HOME/.local/xonsh-env PYTHON_VER=3.11 XONSH_VER='xonsh[full]' \
 TARGET_DIR=$HOME/.local/xonsh-env PYTHON_VER=3.12 XONSH_VER='git+https://github.com/xonsh/xonsh#egg=xonsh[full]' \
  /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/anki-code/xonsh-install/main/mamba-install-xonsh.sh)"
 ```
-Here is known issues of latest python version: [#5166](https://github.com/xonsh/xonsh/issues/5166). 
+*Here is known issues of latest python version: [#5166](https://github.com/xonsh/xonsh/issues/5166).*
 
 
 ## Usage
