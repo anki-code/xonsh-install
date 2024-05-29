@@ -127,11 +127,11 @@ ls -1 $MAMBA_BIN_DIR/../xbin/
 EOF
 chmod +x ./xbin/xbin-list
 
-cat > ./xbin/xbin-list-bin <<EOF
+cat > ./xbin/xbin-hidden <<EOF
 #!/bin/bash
 ls -1 $MAMBA_BIN_DIR/
 EOF
-chmod +x ./xbin/xbin-list-bin
+chmod +x ./xbin/xbin-hidden
 
 ./xbin/xmamba install -y python=$PYTHON_VER
 
