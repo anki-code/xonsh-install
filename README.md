@@ -34,7 +34,7 @@ TARGET_DIR=$HOME/.local/xonsh-env PYTHON_VER=3.12 XONSH_VER='git+https://github.
 *Known issues of latest python version: [#5166](https://github.com/xonsh/xonsh/issues/5166).*
 
 
-## Usage
+### Usage
 
 Now forget about the cases where manipulations around python and packages break the shell unintended. Use `pip`, `brew` and other package managers without corrupting xonsh-env.
 
@@ -43,7 +43,7 @@ After installation:
 * `xmamba` refers to `~/.local/xonsh-env/xbin/xmamba`.
 * `xpip` refers to `~/.local/xonsh-env/bin/python -m pip`.
 
-## Additions
+### Additions
 
 * `xbin-xonsh` is to run xonsh from xonsh-env if xonsh overwritten by `$PATH`.
 * `xbin-python` is to run python from xonsh-env.
@@ -53,7 +53,7 @@ After installation:
   * `xbin-list` is to list `xbin` directory. E.g. you check that `lolcat` is there.
   * `xbin-del` is to delete executer from `xbin`. E.g. remove `lolcat` from `xbin`.
 
-## Tips and tricks
+### Tips and tricks
 
 If you have no plans to use `xmamba` [clean](https://fig.io/manual/mamba/clean) the disk space: `xmamba clean -a`.
 
