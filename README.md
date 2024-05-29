@@ -53,7 +53,7 @@ After installation:
 * `xbin-xonsh` is to run xonsh from xonsh-env if xonsh overwritten by `$PATH`.
 * `xbin-python` is to run python from xonsh-env.
 * Use executable script from xonsh-env:
-  * `xbin-hidden` is to list internal `bin` directory in xonsh-env. E.g. you `xpip install lolcat`.
+  * `xbin-hidden` is to list xonsh-env internal hidden `bin` directory. E.g. `xpip install lolcat && xbin-hidden # lolcat`.
   * `xbin-add` is to add executer from `bin` to `xbin`. E.g. `xbin-add lolcat`.
   * `xbin-list` is to list `xbin` directory. E.g. you check that `lolcat` is there.
   * `xbin-del` is to delete executer from `xbin`. E.g. remove `lolcat` from `xbin`.
