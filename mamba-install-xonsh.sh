@@ -10,6 +10,8 @@ TARGET_DIR="${TARGET_DIR:-${HOME}/.local/xonsh-env}"
 PYTHON_VER="${PYTHON_VER:-3.12}"
 XONSH_VER="${XONSH_VER:-xonsh[full]}"
 XONTRIBS="${XONTRIBS:-}"
+XONSHRC="${XONSHRC:-}"
+
 
 MAMBA_BIN_DIR="${TARGET_DIR}/bin"
 MAMBA_USE_CONDA_FORGE="${MAMBA_USE_CONDA_FORGE:-yes}"
@@ -154,6 +156,14 @@ chmod +x ./xbin/xonsh
 
 ln -s xonsh ./xbin/xbin-xonsh  # to run xonsh from xonsh env if xonsh overwritten by $PATH
 ln -s ./bin/python ./xbin/xbin-python  # to run python from xonsh env
+
+
+if [ -n "$XONSHRC" ]; then
+    echo
+    echo Update ~/.xonshrc
+    echo
+    echo $XONSHRC >> ~/.xonshrc
+fi
 
 echo 
 echo Result
