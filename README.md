@@ -20,6 +20,7 @@ The `mamba-install-xonsh.sh` script creates independent python environment for x
 
 ```xsh
 TARGET_DIR=$HOME/.local/xonsh-env PYTHON_VER=3.11 XONSH_VER='xonsh[full]' \
+ XONTRIBS="xontrib-sh xontrib-jump-to-dir xontrib-pipeliner xontrib-prompt-bar xontrib-whole-word-jumping" \
  /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/anki-code/xonsh-install/main/mamba-install-xonsh.sh)"
 ```
 
@@ -27,6 +28,7 @@ TARGET_DIR=$HOME/.local/xonsh-env PYTHON_VER=3.11 XONSH_VER='xonsh[full]' \
 
 ```xsh
 TARGET_DIR=$HOME/.local/xonsh-env PYTHON_VER=3.12 XONSH_VER='git+https://github.com/xonsh/xonsh#egg=xonsh[full]' \
+ XONTRIBS="xontrib-sh xontrib-jump-to-dir xontrib-pipeliner xontrib-prompt-bar xontrib-whole-word-jumping" \
  /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/anki-code/xonsh-install/main/mamba-install-xonsh.sh)"
 ```
 *Known issues of latest python version: [#5166](https://github.com/xonsh/xonsh/issues/5166).*
