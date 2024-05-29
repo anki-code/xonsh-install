@@ -55,8 +55,8 @@ Additions:
 * Use executable script from xonsh-env:
   * `xbin-hidden` is to list xonsh-env internal hidden `bin` directory. E.g. `xpip install lolcat && xbin-hidden # lolcat`.
   * `xbin-add` is to add executer from hidden `bin` to visible `xbin`. E.g. `xbin-add lolcat`.
-  * `xbin-list` is to list visible `xbin` directory. E.g. you check that `lolcat` is there.
-  * `xbin-del` is to delete executer from `xbin`. E.g. remove `lolcat` from `xbin`. It will stay in `bin`.
+  * `xbin-list` is to list visible `xbin` directory. E.g. `xbin-list # lolcat`.
+  * `xbin-del` is to delete executer from `xbin`. E.g. `xbin-del lolcat`. It will stay in `bin`.
 
 ### Tips and tricks
 
