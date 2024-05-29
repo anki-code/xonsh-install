@@ -8,7 +8,8 @@ echo
 
 TARGET_DIR="${TARGET_DIR:-${HOME}/.local/xonsh-env}"
 PYTHON_VER="${PYTHON_VER:-3.12}"
-XONSH_VER="xonsh[full]"  # Use `git+https://github.com/xonsh/xonsh` to install from master branch.
+XONSH_VER="${XONSH_VER:-xonsh[full]}"
+XONTRIBS="${XONTRIBS:-}"
 
 MAMBA_BIN_DIR="${TARGET_DIR}/bin"
 MAMBA_USE_CONDA_FORGE="${MAMBA_USE_CONDA_FORGE:-yes}"
@@ -131,7 +132,18 @@ EOF
 chmod +x ./xbin/xbin-list-bin
 
 ./xbin/xmamba install -y python=$PYTHON_VER
+
+echo
+echo Install $XONSH_VER
+echo
 "$TARGET_DIR/bin/python" -m pip install $XONSH_VER
+
+if [ -n "$XONTRIBS" ]; then
+    echo
+    echo Install xontribs: $XONTRIBS
+    echo
+    "$TARGET_DIR/bin/python" -m pip install $(echo $XONTRIBS)
+fi
 
 cat > ./xbin/xonsh <<EOF
 #!/bin/bash -i
