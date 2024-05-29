@@ -48,7 +48,7 @@ After installation:
 * `xmamba` refers to `~/.local/xonsh-env/xbin/xmamba`.
 * `xpip` refers to `~/.local/xonsh-env/bin/python -m pip`.
 
-### Additions
+Additions:
 
 * `xbin-xonsh` is to run xonsh from xonsh-env if xonsh overwritten by `$PATH`.
 * `xbin-python` is to run python from xonsh-env.
