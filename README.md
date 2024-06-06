@@ -64,7 +64,7 @@ If you have no plans to use `xmamba` [clean](https://fig.io/manual/mamba/clean) 
 
 ## Another way to install xonsh
 
-If you know how to install xonsh using another package manager PR is welcome!
+If you know how to install xonsh using another package manager - PR is welcome!
 
 ## See also
 * [xonsh-cheatsheet](https://github.com/anki-code/xonsh-cheatsheet/tree/main) - Cheat sheet for xonsh shell with copy-pastable examples. The best doc for the new users. 
