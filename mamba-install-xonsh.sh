@@ -123,7 +123,7 @@ chmod +x ./xbin/xbin-del
 
 cat > ./xbin/xbin-list <<EOF
 #!/bin/bash
-ls -1 $MAMBA_BIN_DIR/../xbin/
+ls -1 $MAMBA_BIN_DIR/../xbin/ | grep -v xbin-
 EOF
 chmod +x ./xbin/xbin-list
 
