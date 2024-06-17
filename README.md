@@ -60,7 +60,7 @@ Additions:
 
 Note:
 
-We do not recommend to use xonsh is a default login shell if you are not feel you strong and experienced. Because of most tools are waiting that login shell is POSIX-compliant you can face with issues when some tool is trying to run sh commands in xonsh.
+We do not recommend to use xonsh as a default login shell if you are not feel you strong and experienced. Because of most tools are waiting that login shell is POSIX-compliant you can face with issues when some tool is trying to run sh commands in xonsh.
 
 ### Tips and tricks
 
