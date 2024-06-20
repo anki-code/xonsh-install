@@ -99,11 +99,11 @@ echo
 echo Install xonsh
 echo 
 
-#cat > ./xbin/xmamba <<EOF
-#\$MAMBA_ROOT_PREFIX = \$(which xonsh)[:-10]
-#execx(\$(@(\$MAMBA_ROOT_PREFIX+'/bin/micromamba') shell hook --shell xonsh).replace("aliases['micromamba']", "aliases['xmamba']"))
-#EOF
-#chmod +x ./xbin/xmamba
+cat > ./xbin/xmamba <<EOF
+\$MAMBA_ROOT_PREFIX = \$(which xonsh)[:-10]
+execx(\$(@(\$MAMBA_ROOT_PREFIX+'/bin/micromamba') shell hook --shell xonsh).replace("aliases['micromamba']", "aliases['xmamba']"))
+EOF
+chmod +x ./xbin/xmamba
 
 cat > ./xbin/xbin-add <<EOF
 #!/bin/bash
@@ -130,7 +130,7 @@ ls -1 $MAMBA_BIN_DIR/
 EOF
 chmod +x ./xbin/xbin-hidden
 
-./xbin/xmamba install -y python=$PYTHON_VER
+./bin/micromamba install -y python=$PYTHON_VER
 
 echo
 echo Install $XONSH_VER
@@ -179,6 +179,4 @@ echo
 echo "  * Or run xonsh manually by path from any place:"
 echo
 echo "      ${TARGET_DIR}/xbin/xonsh"
-echo 
-echo '  Note! You can clean the space by running `xmamba clean -a`.'
 echo 
