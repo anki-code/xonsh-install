@@ -130,7 +130,10 @@ ls -1 $MAMBA_BIN_DIR/
 EOF
 chmod +x ./xbin/xbin-hidden
 
-./bin/micromamba install -y python=$PYTHON_VER
+export MAMBA_ROOT_PREFIX="$TARGET_DIR"
+eval "$($MAMBA_BIN_DIR/micromamba shell hook --shell bash)"
+micromamba activate base
+micromamba install -y python=$PYTHON_VER
 
 echo
 echo Install $XONSH_VER
