@@ -45,7 +45,6 @@ Now forget about the cases where manipulations around python and packages break 
 
 After installation:
 * `xonsh` refers to `~/.local/xonsh-env/xbin/xonsh`.
-* `xmamba` refers to `~/.local/xonsh-env/xbin/xmamba`.
 * `xpip` refers to `~/.local/xonsh-env/bin/python -m pip`.
 
 Additions:
@@ -63,6 +62,21 @@ Note:
 We do not recommend to use xonsh as a default login shell if you are not feel you strong and experienced. Because of most tools are waiting that login shell is POSIX-compliant you can face with issues when some tool is trying to run sh commands in xonsh.
 
 ### Tips and tricks
+
+#### Using mamba from xonsh-env
+
+To bind xonsh-env micromamba to `xmamba` alias run:
+```xsh
+$MAMBA_ROOT_PREFIX = $(which xmamba)[:-11]
+execx($(@($MAMBA_ROOT_PREFIX+'/bin/micromamba') shell hook --shell xonsh).replace("aliases['micromamba']", "aliases['xmamba']"))
+```
+Now you can:
+```xsh
+xmamba create --name myenv python=3.12
+xmamba activate myenv
+```
+
+#### Cleaning
 
 If you have no plans to use `xmamba` [clean](https://fig.io/manual/mamba/clean) the disk space: `xmamba clean -a`.
 
