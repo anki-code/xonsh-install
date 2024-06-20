@@ -46,7 +46,7 @@ Now forget about the cases where manipulations around python and packages break 
 After installation:
 * `xonsh` refers to `~/.local/xonsh-env/xbin/xonsh`.
 * `xpip` refers to `~/.local/xonsh-env/bin/python -m pip`.
-* `source xmamba` to activate mamba (see below).
+* `source xmamba` to activate mamba. See below.
 
 Additions:
 
