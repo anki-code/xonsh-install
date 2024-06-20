@@ -155,7 +155,7 @@ EOF
 chmod +x ./xbin/xonsh
 
 ln -s xonsh ./xbin/xbin-xonsh  # to run xonsh from xonsh env if xonsh overwritten by $PATH
-ln -s ./bin/python ./xbin/xbin-python  # to run python from xonsh env
+ln -s ../bin/python ./xbin/xbin-python  # to run python from xonsh env
 
 
 if [ -n "$XONSHRC" ]; then
