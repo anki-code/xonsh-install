@@ -72,8 +72,8 @@ source xmamba
 ```
 Now you can:
 ```xsh
-xmamba activate base
-pip install lolcat  # Install `lolcat` into `base` env (where xonsh installed).
+xmamba activate base  # Env where xonsh was installed.
+pip install lolcat  # Install `lolcat` into `base` env.
 xmamba deactivate
 
 xmamba create --name myenv python=3.12
