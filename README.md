@@ -67,8 +67,7 @@ We do not recommend to use xonsh as a default login shell if you are not feel yo
 
 To bind xonsh-env micromamba to `xmamba` alias run:
 ```xsh
-$MAMBA_ROOT_PREFIX = $(which xmamba)[:-11]
-execx($(@($MAMBA_ROOT_PREFIX+'/bin/micromamba') shell hook --shell xonsh).replace("aliases['micromamba']", "aliases['xmamba']"))
+source xmamba
 ```
 Now you can:
 ```xsh
