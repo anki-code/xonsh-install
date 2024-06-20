@@ -30,7 +30,7 @@ TARGET_DIR=$HOME/.local/xonsh-env PYTHON_VER=3.12 XONSH_VER='git+https://github.
  /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/anki-code/xonsh-install/main/mamba-install-xonsh.sh)"
 ```
 
-**Install with stuff**: preinstall and preload xontribs (good for ssh and as manual alternative to [xxh](https://github.com/xxh/xxh)):
+**Install with stuff**: preinstall and preload [xontribs](https://github.com/topics/xontrib) (good for ssh and as manual alternative to [xxh](https://github.com/xxh/xxh)):
 
 ```xsh
 TARGET_DIR=$HOME/.local/xonsh-env PYTHON_VER=3.11 XONSH_VER='git+https://github.com/xonsh/xonsh#egg=xonsh[full]' \
