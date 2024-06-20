@@ -100,7 +100,7 @@ echo Install xonsh
 echo 
 
 cat > ./xbin/xmamba <<EOF
-\$MAMBA_ROOT_PREFIX = $(which xonsh)[:-10]
+\$MAMBA_ROOT_PREFIX = \$(which xonsh)[:-10]
 execx(\$(@(\$MAMBA_ROOT_PREFIX+'/bin/micromamba') shell hook --shell xonsh).replace("aliases['micromamba']", "aliases['xmamba']"))
 EOF
 chmod +x ./xbin/xmamba
