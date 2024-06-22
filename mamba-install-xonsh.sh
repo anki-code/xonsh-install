@@ -150,6 +150,7 @@ fi
 cat > ./xbin/xonsh <<EOF
 #!/bin/bash -i
 export PATH=$TARGET_DIR/xbin:\$PATH
+export XONSH_INSTALL_DIR="$TARGET_DIR"
 "$TARGET_DIR/bin/xonsh" "\$@"
 EOF
 chmod +x ./xbin/xonsh
