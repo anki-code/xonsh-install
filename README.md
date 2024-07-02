@@ -14,7 +14,7 @@ When xonsh becomes a core shell it's needed to keep python environment with xons
 
 ## mamba-install-xonsh
 
-The `mamba-install-xonsh.sh` script creates independent python environment for xonsh using [mamba](https://mamba.readthedocs.io/). It's isolated xonsh-specific environment that can't be affected by upgrading the system packages, python version and other experiments around environments. You can use `xpip` and `xmamba` to install packages into this environment intentionally.
+The `mamba-install-xonsh.sh` script creates independent python environment for xonsh using [mamba](https://mamba.readthedocs.io/) in `$TARGET_DIR` without affect any other things on the system. It's isolated xonsh-specific environment that can't be affected by upgrading the system packages, python version and other experiments around environments. You can use `xpip` and `xmamba` to install packages into this environment intentionally.
 
 **Install stable**: the latest xonsh release with mostly tested python version:
 
