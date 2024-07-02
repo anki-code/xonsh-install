@@ -62,6 +62,10 @@ Note:
 
 We do not recommend to use xonsh as a default login shell if you are not feel you strong and experienced. Because of most tools are waiting that login shell is POSIX-compliant you can face with issues when some tool is trying to run sh commands in xonsh.
 
+### Uninstall
+
+Just delete `$TARGET_DIR` e.g. `~/.local/xonsh-env/` by default.
+
 ### Tips and tricks
 
 #### Using mamba from xonsh-env
