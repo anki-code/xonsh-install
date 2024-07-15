@@ -84,7 +84,12 @@ xmamba deactivate
 
 #### Cleaning
 
-If you have no plans to use `xmamba` [clean](https://fig.io/manual/mamba/clean) the disk space: `xmamba clean -a`.
+If you have no plans to use `xmamba` [clean](https://fig.io/manual/mamba/clean) the disk space: 
+
+```xsh
+source xmamba
+xmamba clean -a
+```
 
 ### Uninstall
 
