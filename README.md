@@ -34,7 +34,7 @@ TARGET_DIR=$HOME/.local/xonsh-env PYTHON_VER=3.12 XONSH_VER='git+https://github.
 
 ```xsh
 TARGET_DIR=$HOME/.local/xonsh-env PYTHON_VER=3.11 XONSH_VER='git+https://github.com/xonsh/xonsh#egg=xonsh[full]' \
- XONTRIBS="xontrib-sh xontrib-jump-to-dir xontrib-spec-mod xontrib-pipeliner xontrib-whole-word-jumping" \
+ PIP_INSTALL="uv xontrib-sh xontrib-jump-to-dir xontrib-spec-mod xontrib-pipeliner xontrib-whole-word-jumping" \
  XONSHRC="xontrib load -s sh jump_to_dir pipeliner whole_word_jumping spec_mod; $PROMPT = $PROMPT.replace('{prompt_end}', '\n{prompt_end}')" \
  /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/anki-code/xonsh-install/main/mamba-install-xonsh.sh)"
 ```
