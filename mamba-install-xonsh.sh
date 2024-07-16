@@ -9,7 +9,7 @@ echo
 TARGET_DIR="${TARGET_DIR:-${HOME}/.local/xonsh-env}"
 PYTHON_VER="${PYTHON_VER:-3.12}"
 XONSH_VER="${XONSH_VER:-xonsh[full]}"
-XONTRIBS="${XONTRIBS:-}"
+PIP_INSTALL="${PIP_INSTALL:-}"
 XONSHRC="${XONSHRC:-}"
 
 
@@ -140,11 +140,11 @@ echo Install $XONSH_VER
 echo
 "$TARGET_DIR/bin/python" -m pip install $XONSH_VER
 
-if [ -n "$XONTRIBS" ]; then
+if [ -n "$PIP_INSTALL" ]; then
     echo
-    echo Install xontribs: $XONTRIBS
+    echo Install: $PIP_INSTALL
     echo
-    "$TARGET_DIR/bin/python" -m pip install $(echo $XONTRIBS)
+    "$TARGET_DIR/bin/python" -m pip install $(echo $PIP_INSTALL)
 fi
 
 cat > ./xbin/xonsh <<EOF
