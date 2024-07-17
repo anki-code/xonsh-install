@@ -100,7 +100,7 @@ echo Install xonsh
 echo 
 
 cat > ./xbin/xmamba <<EOF
-if $XONSH_MODE != 'source':
+if \$XONSH_MODE != 'source':
     printx('Run: source xmamba', 'YELLOW')
     exit(1)
 \$MAMBA_ROOT_PREFIX = \$(which xonsh)[:-10]
