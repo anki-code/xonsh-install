@@ -16,21 +16,21 @@ When xonsh becomes a core shell it's needed to keep python environment with xons
 
 The `mamba-install-xonsh.sh` script creates independent python environment for xonsh using [mamba](https://mamba.readthedocs.io/) in `$TARGET_DIR` without affect any other things on the system. It's isolated xonsh-specific environment that can't be affected by upgrading the system packages, python version and other experiments around environments. You can use `xpip` and `xmamba` to install packages into this environment intentionally.
 
-**Install stable**: the latest xonsh release with mostly tested python version:
+**<ins>Install stable</ins>**: the latest xonsh release with mostly tested python version:
 
 ```xsh
 TARGET_DIR=$HOME/.local/xonsh-env PYTHON_VER=3.11 XONSH_VER='xonsh[full]>=0.18.0' \
  /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/anki-code/xonsh-install/main/mamba-install-xonsh.sh)"
 ```
 
-**Install the front line**: xonsh from main git branch with latest python version (known issues: [#5166](https://github.com/xonsh/xonsh/issues/5166)):
+**<ins>Install the front line</ins>**: xonsh from main git branch with latest python version (known issues: [#5166](https://github.com/xonsh/xonsh/issues/5166)):
 
 ```xsh
 TARGET_DIR=$HOME/.local/xonsh-env PYTHON_VER=3.12 XONSH_VER='git+https://github.com/xonsh/xonsh#egg=xonsh[full]' \
  /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/anki-code/xonsh-install/main/mamba-install-xonsh.sh)"
 ```
 
-**Install with stuff**: preinstall and preload [xontribs](https://github.com/topics/xontrib) (good for ssh and as manual alternative to [xxh](https://github.com/xxh/xxh)):
+**<ins>Install with stuff</ins>**: preinstall and preload [xontribs](https://github.com/topics/xontrib) (good for ssh and as manual alternative to [xxh](https://github.com/xxh/xxh)):
 
 ```xsh
 TARGET_DIR=$HOME/.local/xonsh-env PYTHON_VER=3.11 XONSH_VER='git+https://github.com/xonsh/xonsh#egg=xonsh[full]' \
