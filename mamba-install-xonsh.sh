@@ -166,6 +166,11 @@ if [ -n "$XONSHRC" ]; then
     echo $XONSHRC >> ~/.xonshrc
 fi
 
+# echo 
+# echo Test and prewarm xonsh
+# echo
+# ${TARGET_DIR}/xbin/xonsh --no-rc --no-env -c "2+2"
+
 echo 
 echo Result
 echo
