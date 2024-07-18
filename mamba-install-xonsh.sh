@@ -100,9 +100,9 @@ echo Install xonsh
 echo 
 
 cat > ./xbin/xmamba <<EOF
-if \$XONSH_MODE != 'source':
-    printx('Run: source xmamba', 'YELLOW')
-    exit(1)
+#if \$XONSH_MODE != 'source':
+#    printx('Run: source xmamba', 'YELLOW')
+#    exit(1)
 \$MAMBA_ROOT_PREFIX = \$(which xonsh)[:-10]
 execx(\$(@(\$MAMBA_ROOT_PREFIX+'/bin/micromamba') shell hook --shell xonsh).replace("aliases['micromamba']", "aliases['xmamba']"))
 EOF
