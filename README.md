@@ -95,6 +95,12 @@ xmamba clean -a
 
 Just delete `$TARGET_DIR` e.g. `~/.local/xonsh-env/` by default.
 
+### Known issues
+
+#### `std::bad_alloc`
+
+If you see `terminate called after throwing an instance of 'std::bad_alloc'` just delete the target directory (e.g. `rm -rf ~/.local/xonsh-env/`) and try to install again.
+
 ## Another way to install xonsh
 
 If you know how to install xonsh using another package manager - PR is welcome!
