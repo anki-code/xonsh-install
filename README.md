@@ -19,7 +19,7 @@ The `mamba-install-xonsh.sh` script creates independent python environment for x
 **<ins>Install stable</ins>**: the latest xonsh release with mostly tested python version:
 
 ```xsh
-TARGET_DIR=$HOME/.local/xonsh-env PYTHON_VER=3.11 XONSH_VER='xonsh[full]>=0.18.2' \
+TARGET_DIR=$HOME/.local/xonsh-env PYTHON_VER=3.11 XONSH_VER='xonsh[full]>=0.18.3' \
  /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/anki-code/xonsh-install/main/mamba-install-xonsh.sh)"
 ```
 
