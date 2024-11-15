@@ -185,6 +185,7 @@ echo Now you can:
 echo
 echo '  * Add `xbin` dir to the top of your system shell path:'
 echo
+echo "      echo 'export PATH=${TARGET_DIR}/xbin:\$PATH' >> ~/.zshrc"
 echo "      echo 'export PATH=${TARGET_DIR}/xbin:\$PATH' >> ~/.bashrc"
 echo '      # Restart session and run xonsh.'
 echo
