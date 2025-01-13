@@ -23,7 +23,7 @@ TARGET_DIR=$HOME/.local/xonsh-env PYTHON_VER=3.11 XONSH_VER='xonsh[full]>=0.19.0
  /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/anki-code/xonsh-install/main/mamba-install-xonsh.sh)"
 ```
 
-**<ins>Install the front line</ins>**: xonsh from main git branch with latest python version (known issues: [#5166](https://github.com/xonsh/xonsh/issues/5166)):
+**<ins>Install the front line</ins>**: xonsh from main git branch with stable python version (known issues: [#5166](https://github.com/xonsh/xonsh/issues/5166)):
 
 ```xsh
 TARGET_DIR=$HOME/.local/xonsh-env PYTHON_VER=3.12 XONSH_VER='git+https://github.com/xonsh/xonsh#egg=xonsh[full]' \
