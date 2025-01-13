@@ -150,14 +150,7 @@ if [ -n "$PIP_INSTALL" ]; then
     "$TARGET_DIR/bin/python" -m pip install $(echo $PIP_INSTALL)
 fi
 
-cat > ./xbin/xonsh <<EOF
-#!/bin/bash -i
-export PATH=$TARGET_DIR/xbin:\$PATH
-export XONSH_INSTALL_DIR="$TARGET_DIR"
-"$TARGET_DIR/bin/xonsh" "\$@"
-EOF
-chmod +x ./xbin/xonsh
-
+ln -s $TARGET_DIR/bin/xonsh ./xbin/xonsh
 ln -s xonsh ./xbin/xbin-xonsh  # to run xonsh from xonsh env if xonsh overwritten by $PATH
 ln -s ../bin/python ./xbin/xbin-python  # to run python from xonsh env
 
