@@ -97,6 +97,10 @@ Just delete `$TARGET_DIR` e.g. `~/.local/xonsh-env/` by default.
 
 ### Known issues
 
+#### Collisions with `.bashrc`
+
+During xonsh installation you will add `.../xonsh-env/xbin` to your `PATH` env variable. The `.../xonsh-env/xbin/xonsh` contains `#!/bin/bash -i` executer and `.bashrc` will be executed before xonsh run. To avoid this instead of `xbin` you can use `.../xonsh-env/bin` - the environment bin directory.
+
 #### `std::bad_alloc`
 
 If you see `terminate called after throwing an instance of 'std::bad_alloc'` just delete the target directory (e.g. `rm -rf ~/.local/xonsh-env/`) and try to install again.
