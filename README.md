@@ -93,7 +93,7 @@ xmamba clean -a
 
 ### Uninstall
 
-Just delete `$TARGET_DIR` e.g. `~/.local/xonsh-env/` by default.
+Just delete `$TARGET_DIR` e.g. `rm -rf ~/.local/xonsh-env/` by default.
 
 ### Known issues
 
