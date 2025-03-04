@@ -58,10 +58,6 @@ Additions:
   * `xbin-list` is to list visible `xbin` directory. E.g. `xbin-list # lolcat`.
   * `xbin-del` is to delete executer from `xbin`. E.g. `xbin-del lolcat`. It will stay in `bin`.
 
-Note:
-
-We do not recommend to use xonsh as a default login shell if you are not feel you strong and experienced. Because of most tools are waiting that login shell is POSIX-compliant you can face with issues when some tool is trying to run sh commands in xonsh.
-
 ### Tips and tricks
 
 #### Using mamba from xonsh-env
@@ -96,6 +92,10 @@ xmamba clean -a
 Just delete `$TARGET_DIR` e.g. `rm -rf ~/.local/xonsh-env/` by default.
 
 ### Known issues
+
+### Do not blindly use as a login shell
+
+We do not recommend to use xonsh as a [login shell](https://linuxhandbook.com/login-shell/) if you are not feel you strong and experienced. Most tools are waiting that login shell is POSIX-compliant you can face with issues when some tool is trying to run POSIX-compatible commands in xonsh.
 
 #### `std::bad_alloc`
 
