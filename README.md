@@ -93,7 +93,7 @@ Just delete `$TARGET_DIR` e.g. `rm -rf ~/.local/xonsh-env/` by default.
 
 ### Known issues
 
-### Do not blindly use as a login shell
+#### Do not blindly use as a login shell
 
 We do not recommend to use xonsh as a [login shell](https://linuxhandbook.com/login-shell/) if you are not feel you strong and experienced. Most tools are waiting that login shell is POSIX-compliant you can face with issues when some tool is trying to run POSIX-compatible commands in xonsh.
 
