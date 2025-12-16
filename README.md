@@ -12,7 +12,11 @@ Xonsh is a Python-based shell, and to run xonsh you must have Python installed. 
 
 When xonsh becomes a core shell it's needed to keep python environment with xonsh stable, predictable and independent of any changes in the system. The lightweight environment managers like `venv`, `pipx` or `rye` will not help with this and it's needed to use package managers that have ability to install isolated python invironment as core feature e.g. `miniconda`, `micromamba`.
 
-## mamba-install-xonsh
+## xonsh.AppImage (Linux)
+
+[xonsh.AppImage](https://xon.sh/appimage.html) - one executable file which contains both xonsh and Python. AppImage allows xonsh to be run on any AppImage supported Linux distribution without installation or root access.
+
+## mamba-install-xonsh (macOS, Linux and any Mamba supported OS)
 
 The `mamba-install-xonsh.sh` script creates independent python environment for xonsh using [mamba](https://mamba.readthedocs.io/) in `$TARGET_DIR` without affect any other things on the system. It's isolated xonsh-specific environment that can't be affected by upgrading the system packages, python version and other experiments around environments. You can use `xpip` and `xmamba` to install packages into this environment intentionally.
 
@@ -109,4 +113,3 @@ If you know how to install xonsh using another package manager - PR is welcome!
 
 ## See also
 * [xonsh-cheatsheet](https://github.com/anki-code/xonsh-cheatsheet/tree/main) - Cheat sheet for xonsh shell with copy-pastable examples. The best doc for the new users. 
-* [xonsh.AppImage](https://xon.sh/appimage.html) - one executable file which contains both xonsh and Python. AppImage allows xonsh to be run on any AppImage supported Linux distribution without installation or root access.
