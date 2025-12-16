@@ -14,7 +14,13 @@ When xonsh becomes a core shell it's needed to keep python environment with xons
 
 ## xonsh.AppImage (Linux)
 
-[xonsh.AppImage](https://xon.sh/appimage.html) ([download](https://github.com/xonsh/xonsh/releases/latest/download/xonsh-x86_64.AppImage)) - one executable file which contains both xonsh and Python. AppImage allows xonsh to be run on any AppImage supported Linux distribution without installation or root access.
+[xonsh.AppImage](https://xon.sh/appimage.html) - one executable file which contains both xonsh and Python. AppImage allows xonsh to be run on any AppImage supported Linux distribution without installation or root access.
+
+```xsh
+wget https://github.com/xonsh/xonsh/releases/latest/download/xonsh-x86_64.AppImage -O xonsh
+chmod +x xonsh
+./xonsh
+```
 
 ## mamba-install-xonsh (macOS, Linux and any Mamba supported OS)
 
