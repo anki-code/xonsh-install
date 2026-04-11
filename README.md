@@ -1,3 +1,7 @@
+# ▶️ The project code was integrated to the xonsh core so read [Xonsh Installation General Guide](https://xon.sh/install.html)
+
+-----------------------
+
 <p align="center">
 Best way to install xonsh on macOS or Linux and using it as core shell.
 </p>
